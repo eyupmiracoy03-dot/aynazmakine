@@ -109,10 +109,46 @@
         }
 
         .about {
-            padding: 2.5rem 0 0;
+            padding: 2.5rem 0 1.5rem;
         }
         .about h2 { margin-bottom: .7rem; }
         .about p { color:#d0d0d0; max-width: 48rem; line-height: 1.7; }
+
+        /* ÇALIŞTIĞIMIZ FİRMALAR */
+        .clients {
+            padding: 2rem 0 0;
+            text-align: center;
+        }
+        .clients h2 {
+            margin-bottom: .5rem;
+        }
+        .clients .subtitle {
+            color:#c9c9c9;
+            font-size: .95rem;
+        }
+        .client-grid {
+            margin-top: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .client-logo img {
+            height: 60px;
+            max-width: 150px;
+            object-fit: contain;
+            filter: grayscale(.2);
+            opacity: .9;
+            transition: transform .2s ease, filter .2s ease, opacity .2s ease;
+            background: #ffffff;
+            border-radius: .4rem;
+            padding: .25rem .5rem;
+        }
+        .client-logo img:hover {
+            transform: translateY(-4px) scale(1.03);
+            filter: none;
+            opacity: 1;
+        }
 
         footer {
             border-top: 1px solid rgba(255,255,255,0.06);
@@ -127,6 +163,7 @@
             .hero { grid-template-columns: 1fr; }
             .strip-track img { height: 140px; }
             nav ul { gap: .75rem; font-size: .85rem; }
+            .client-logo img { height: 50px; }
         }
     </style>
 </head>
@@ -140,7 +177,6 @@
         </div>
         <nav>
             <ul>
-                <!-- ANA MENÜ - DÜZELTİLMİŞ HALİ -->
                 <li><a href="index.html" class="active">Ana Sayfa</a></li>
                 <li><a href="hizmetler.html">Hizmetler</a></li>
                 <li><a href="tezgahlar.html">Tezgâhlarımız</a></li>
@@ -173,19 +209,18 @@
 
         <div class="strip-wrapper">
             <div class="strip-track">
-                <img src="assets/atolye1.png">
-                <img src="assets/atolye2.png">
-                <img src="assets/atolye3.png">
-                <img src="assets/atolye4.png">
-                <img src="assets/atolye5.png">
-                <img src="assets/atolye6.png">
-                <img src="assets/atolye7.png">
-                <img src="assets/atolye8.png">
-
+                <img src="assets/atolye1.png" alt="">
+                <img src="assets/atolye2.png" alt="">
+                <img src="assets/atolye3.png" alt="">
+                <img src="assets/atolye4.png" alt="">
+                <img src="assets/atolye5.png" alt="">
+                <img src="assets/atolye6.png" alt="">
+                <img src="assets/atolye7.png" alt="">
+                <img src="assets/atolye8.png" alt="">
                 <!-- tekrar eden kareler animasyon için -->
-                <img src="assets/atolye1.png">
-                <img src="assets/atolye2.png">
-                <img src="assets/atolye3.png">
+                <img src="assets/atolye1.png" alt="">
+                <img src="assets/atolye2.png" alt="">
+                <img src="assets/atolye3.png" alt="">
             </div>
         </div>
     </section>
@@ -200,6 +235,30 @@
         </p>
     </section>
 
+    <!-- ÇALIŞTIĞIMIZ FİRMALAR -->
+    <section class="clients">
+        <h2>Çalıştığımız Firmalar</h2>
+        <p class="subtitle">Projelerimizde birlikte çalıştığımız bazı çözüm ortaklarımız.</p>
+
+        <div class="client-grid">
+            <div class="client-logo">
+                <img src="assets/machsol.png" alt="Machsol">
+            </div>
+            <div class="client-logo">
+                <img src="assets/eka-muhendislik.jpg" alt="EKA Mühendislik">
+            </div>
+            <div class="client-logo">
+                <img src="assets/goplast.jpg" alt="Go Plast">
+            </div>
+            <div class="client-logo">
+                <img src="assets/aselsan.jpg" alt="Aselsan">
+            </div>
+            <div class="client-logo">
+                <img src="assets/kulp-ambalaj.png" alt="Kulp Ambalaj">
+            </div>
+        </div>
+    </section>
+
 </main>
 
 <footer>
@@ -208,3 +267,5 @@
 
 </body>
 </html>
+
+
